@@ -14,7 +14,7 @@ fx_version 'adamant'
 
 game 'gta5'
 author 'sledge_hamm3r / ShameV'
-description 'NPC aus'
+description 'Sicherheitsgurt'
 version '1.0.0'
 
 client_scripts {
