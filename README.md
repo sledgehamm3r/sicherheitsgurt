@@ -1,0 +1,2 @@
+# sicherheitsgurt
+Anschnallscript für FiveM
