@@ -79,54 +79,73 @@ Funktionen:
 Das Realistische Anschnallsystem ist speziell für FiveM entwickelt worden und kann nahtlos in deine bestehende Server- oder Client-Ressourcen integriert werden. Es ist einfach zu installieren und zu konfigurieren, und wir haben ausführliche Dokumentationen bereitgestellt, um den Einstieg zu erleichtern.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Zurück nach oben</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Verwendung
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Der Script ist einfach zu installieren. Im folgenden Script dennoch eine Erklärung, wie du vorgehen solltest.
 
-### Prerequisites
+### Voraussetzungen
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Dies ist ein Script für das ESX-Framwork. Demnach sollte dein Server auf der neuesten ESX Framwork Version laufen.
+
+* Lade den neuesten Release herunter.
   ```sh
-  npm install npm@latest -g
+  https://github.com/sledgehamm3r/sicherheitsgurt/releases
   ```
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Sobald du den Script heruntergeladen hast kommen wir nun zu den weiteren Schritten._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Extrahiere den .zip Ordner 
+2. Nenne den Ordner, falls notwendig, um. Er sollte ShameV-sicherheitsgurt heißen.
+3. Kopiere den Ordner in deinen Ressourcen Ordner.
+4. Füge deiner server.cfg folgendes hinzu:
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   start ShameV-sicherheitsgurt
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Zurück nach Oben</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Benutzung
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Die Benutzung des Scriptes ist sehr einfach. Sobald ein Spieler in einem Fahrzeug sitzt und die Taste "K" drückt, wird er angeschnallt - bei wiederholtem Drücken von "K" wird der Spieler wieder abgeschnallt.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Die config.lua bietet die Möglichkeit verschiedene Paramater zu ändern: 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```sh
+-- Anschnallton abspielen Ja/Nein
+Config.Sounds = true
+Config.LoopSound = false
+Config.Volume = 0.8
+-- Min: 0.0 Max: 1.0
+
+-- Benachrichtungen An/Aus
+Config.Notification = true
+Config.Strings = {seatbelt_on = 'Sicherheitsgurt: ~g~angeschnallt', seatbelt_off = 'Sicherheitsgurt: ~r~abgeschnallt'}
+
+-- Warnbild bei nichtanschnallen An/Aus
+Config.Blinker = true
+
+-- Taste für den Gurt (docs.fivem.net/docs/game-references/controls)
+Config.Control = 311
+
+-- Geschwindigkeit, ab wann man aus dem Auto fällt, wenn man nicht angeschnallt ist.
+Config.Speed = 50.0
+
+-- Ab wieviel KM/H soll das Warnbild erscheinen
+Config.AlarmOnlySpeed = true
+Config.AlarmSpeed = 20
+```
+
+<p align="right">(<a href="#readme-top">Zurück nach Oben</a>)</p>
 
 
 
