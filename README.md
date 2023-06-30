@@ -25,7 +25,7 @@
     <a href="https://github.com/sledgehamm3r/sicherheitsgurt"><strong>Dokumentation ansehen »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sledgehamm3r/sicherheitsgurt">Demo</a>
+    <a href="https://youtu.be/fuKFxdK3Rxk">Demo</a>
     ·
     <a href="https://github.com/sledgehamm3r/sicherheitsgurt/issues">Bug melden</a>
     ·
